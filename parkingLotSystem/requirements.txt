@@ -1,0 +1,17 @@
+ultralytics>=8.0.200
+opencv-python
+face_recognition
+dlib
+numpy
+easyocr
+pillow
+torch
+matplotlib
+scikit-image
+pygame
+cmake
+setuptools<81
+matplotlib
+easyocr
+pandas
+openpyxl
