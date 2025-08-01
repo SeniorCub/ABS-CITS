@@ -39,16 +39,16 @@ class ParkingLotFaceRecognition:
         self.face_distance_threshold = 0.6  # Increased threshold for known faces
         self.unknown_threshold = 0.5  # Threshold for matching unknown faces
 
-        # Capture control settings
-        self.capture_interval = 10  # Capture every 10 seconds per person
+        # Capture control settings - Set to 0 for constant detection
+        self.capture_interval = 0  # Capture continuously (no delay)
         self.last_capture_time = {}  # Track last capture time per person
         self.last_sound_time = {}  # Track last sound notification per person
-        self.sound_interval = 5  # Play sound every 5 seconds per person
+        self.sound_interval = 0  # Play sound continuously (no delay)
 
         # Activity tracking
         self.current_detections = {}  # Currently detected faces
         self.detection_start_time = {}  # When each person was first detected
-        self.min_detection_duration = 2  # Minimum seconds before logging visit
+        self.min_detection_duration = 0  # No minimum detection time (instant logging)
 
         # Create directories if they don't exist
         os.makedirs(self.output_path, exist_ok=True)
@@ -821,7 +821,7 @@ class ParkingLotFaceRecognition:
                 return
 
             frame_count = 0
-            process_every_n_frames = 3
+            process_every_n_frames = 1  # Process every frame for constant detection
 
             cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
             cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
@@ -836,8 +836,9 @@ class ParkingLotFaceRecognition:
             print("- Press 'r' to reload known faces")
             print("- Press 'v' to view today's activity summary")
             print(f"\nSound notifications: {'Enabled' if SOUND_AVAILABLE else 'Disabled'}")
-            print(f"Capture interval: {self.capture_interval} seconds per person")
-            print(f"Sound interval: {self.sound_interval} seconds per person")
+            print(f"Capture interval: {'Continuous (no delay)' if self.capture_interval == 0 else f'{self.capture_interval} seconds per person'}")
+            print(f"Sound interval: {'Continuous (no delay)' if self.sound_interval == 0 else f'{self.sound_interval} seconds per person'}")
+            print("CONSTANT DETECTION MODE: Processing every frame with no delays")
             logger.info(f"Starting camera detection on camera {camera_index}")
 
             while True:
@@ -1144,6 +1145,32 @@ class ParkingLotFaceRecognition:
 
         except Exception as e:
             logger.error(f"Error during cleanup: {str(e)}")
+
+# Global instance for use by main.py
+_face_recognition_system = None
+
+def get_face_recognition_system():
+    """Get or create the global face recognition system"""
+    global _face_recognition_system
+    if _face_recognition_system is None:
+        _face_recognition_system = ParkingLotFaceRecognition()
+    return _face_recognition_system
+
+def recognize_face_id(frame):
+    """Main function to be called by main.py - returns recognized face name"""
+    try:
+        system = get_face_recognition_system()
+        recognized_faces = system.recognize_face(frame)
+        
+        # Return the first known face found, or None if no faces detected
+        for face_data in recognized_faces:
+            if isinstance(face_data, dict) and 'name' in face_data and face_data['name'] != "Unknown":
+                return face_data['name']
+        
+        return None
+    except Exception as e:
+        logger.error(f"Error in recognize_face_id: {e}")
+        return None
 
 def main():
     """Main function with command-line interface"""
