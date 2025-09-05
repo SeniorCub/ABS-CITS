@@ -808,11 +808,11 @@ class ParkingLotFaceRecognition:
     def run_camera_detection(self, camera_index=1, save_captures=True):
         """Run real-time face detection from camera"""
         try:
-            # if camera_index is None:
-            #     camera_index = self.get_valid_camera_index()
-            #     if camera_index is None:
-            #         logger.error("No available camera found")
-            #         return
+            if camera_index is None:
+                camera_index = self.get_valid_camera_index()
+                if camera_index is None:
+                    logger.error("No available camera found")
+                    return
 
             cap = cv2.VideoCapture(1)
 

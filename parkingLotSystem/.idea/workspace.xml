@@ -5,65 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce2ce867-6e10-436c-a8bb-1b1b2991dfe1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/chatGPT.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img0019.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img002.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img003.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img004.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img005.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img006.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img007.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img008.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img009.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img010.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img011.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img012.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img013.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img014.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img015.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img016.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img017.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img018.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img019.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img020.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img021.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img022.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img023.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img024.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img025.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img026.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img027.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img028.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img029.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img030.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img031.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img032.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img033.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img034.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img035.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img036.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img037.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img038.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img039.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img040.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img041.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img042.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img113.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img114.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/images/img115.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlateYOLOData/video/video001.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/face_recognition/main_face_recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/main_face_recognition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition/parking_system.db" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition/parking_system.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plate_detection/authorized_plates.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/plate_detection/authorized_plates.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plate_detection/best.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plate_detection/plate_system.db" beforeDir="false" afterPath="$PROJECT_DIR$/plate_detection/plate_system.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plate_detection/yolo_detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/plate_detection/yolo_detect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +38,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/seniorcub/Downloads/Stolen Codes/License-Plate-Extraction-Save-Data-to-SQL-Database&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="QodanaReportsService">
@@ -145,7 +88,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-4c141bd692a7-e2d783800521-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26927.90" />
+        <option value="bundled-python-sdk-d9fa9deec7cb-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.23892.515" />
       </set>
     </attachedChunks>
   </component>
